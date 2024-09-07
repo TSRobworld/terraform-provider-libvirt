@@ -14,7 +14,7 @@ FROM hashicorp/terraform:$TERRAFORM_VERSION AS terraform
 FROM provider-libvirt:v0.5.2-musl AS libvirt
 
 # Base Image
-FROM alpine:latest
+FROM alpine:3.20.3
 
 ARG GO_OS
 ENV GO_OS=$GO_OS
