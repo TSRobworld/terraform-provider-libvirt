@@ -46,7 +46,7 @@ RUN git checkout $VERSION && env GO111MODULE=on go mod download
 RUN make build && mv terraform-provider-libvirt $GOPATH/bin/
 
 # Base Image
-FROM alpine:latest
+FROM alpine:3.20.3
 
 ARG GO_OS
 ENV GO_OS=$GO_OS
