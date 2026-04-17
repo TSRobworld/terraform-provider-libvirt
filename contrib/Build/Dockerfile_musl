@@ -1,5 +1,5 @@
 # Building Libvirt Plugin Docker
-FROM golang:alpine
+FROM golang:1.26.2-alpine3.23
 
 ARG VERSION
 ENV VERSION=$VERSION
